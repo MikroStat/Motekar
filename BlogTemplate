@@ -1,4 +1,4 @@
-<script type='text/javascript'>
+
 
 	var winNami=&#39;katingali&#39;;
 
@@ -64,5 +64,5 @@ function iqraC(jurusan, pageURL) {
      alert(&#39;Pilih server nomer 7&#39;);
   }
 
-</script>
+
 
