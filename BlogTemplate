@@ -1,0 +1,68 @@
+<script type='text/javascript'>
+
+	var winNami=&#39;katingali&#39;;
+
+	var petunjukUnduh=&#39;https://sites.google.com/site/alna7tos/panduan-unduh&#39;;
+
+	var w = 600;
+	var wHelp = 700;
+	var h = 900;
+
+     var x = (screen.width - w) / 3;
+     var y = (screen.height - h) / 4; // for 25% - devide by 4  |  for 33% - devide by 3
+
+
+	var kaTenjo = &#39;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, titlebar=no, resizable=no, copyhistory=no, width=&#39; + w + &#39;, height=&#39; + h + &#39;, top=&#39; + y + &#39;, left=&#39; + x;
+
+	var kaTenjoH = &#39;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, titlebar=no, resizable=no, copyhistory=no, width=&#39; + wHelp + &#39;, height=&#39; + h + &#39;, top=&#39; + y + &#39;, left=&#39; + x;
+
+  // Popup window code
+
+    function iqra(pageURL) {
+
+	window.open(pageURL, winNami, kaTenjo);
+ } 
+  
+  function qCover(perkawis, situ){
+	var situUtami = &#39;https://sites.google.com/site/mikrostat7kacipta/buku/cover/&#39;;
+
+
+    switch(perkawis){
+      case 1:
+			var situDirektori = situUtami.concat(&#39;statistik/&#39;);
+			break;
+    }
+	var situs = situDirektori.concat(situ);
+
+	window.open(situs, winNami, kaTenjo);
+
+  }
+
+function iqraC(jurusan, pageURL) {
+   var ss=&#39;https://sites.google.com/site/mikrostat7kacipta/buku/cover/&#39;;
+
+  switch(jurusan){
+    case 1 : 
+		var se=ss.concat(&#39;ekonomi/&#39;);
+		break;
+    default:
+		var se=ss.concat(&#39;statistik/&#39;);
+		break;
+  }
+  var sa=se.concat(pageURL);
+
+  window.open(sa, winNami, kaTenjo);
+ }
+
+ function qHeug(alamatURL) {
+	if(alamatURL) window.open(alamatURL,winNami,kaTenjoH);
+  	else window.open(petunjukUnduh,winNami,kaTenjoH);
+  }
+
+
+ function qServ(){
+     alert(&#39;Pilih server nomer 7&#39;);
+  }
+
+</script>
+
